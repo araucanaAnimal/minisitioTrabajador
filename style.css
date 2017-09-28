@@ -1,4 +1,5 @@
 body {
+  font-family: 'Open Sans', sans-serif;
   background: white; }
 
 header {
@@ -53,13 +54,16 @@ div#example-menu {
 
 #article1 {
   max-width: 100%;
-  background: -moz-linear-gradient(top, #9cc3e2 0%, #89bde6 62%, rgba(135, 188, 230, 0.7) 68%, rgba(125, 185, 232, 0) 100%);
+  background: #9cc3e2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #9cc3e2 0%, white 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #9cc3e2 0%, #89bde6 62%, rgba(135, 188, 230, 0.7) 68%, rgba(125, 185, 232, 0) 100%);
+  background: -webkit-linear-gradient(top, #9cc3e2 0%, white 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #9cc3e2 0%, #89bde6 62%, rgba(135, 188, 230, 0.7) 68%, rgba(125, 185, 232, 0) 100%);
+  background: linear-gradient(to bottom, #9cc3e2 0%, white 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cc3e2', endColorstr='#007db9e8',GradientType=0 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cc3e2', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
 
 div#example-menu {
   height: 120px; }
@@ -121,12 +125,16 @@ a::after {
   padding: 10px 20px 10px 20px; }
 
 .card-section p {
-  color: #767E8B; }
+  color: #767E8B;
+  font-size: 16px;
+  font-weight: regular; }
 
 .card-section h5 {
   color: #0076E8;
   text-transform: uppercase;
-  font-weight: bolder; }
+  font-family: OpenSans;
+  font-weight: 800;
+  font-size: 24px; }
 
 #imageCard1 {
   padding-left: 20px; }
@@ -157,21 +165,31 @@ button.hollow.button {
   background: white; }
 
 .card2-section p {
-  color: #003E73; }
+  color: #003E73;
+  font-size: 21px;
+  font-weight: regular; }
 
 .card2-section h3 {
   color: #0076E8;
-  font-weight: bolder; }
+  font-family: OpenSans;
+  font-weight: 800;
+  font-size: 32px;
+  padding-top: 0px; }
 
 .card2-section h5 {
   color: #003E73;
   text-transform: uppercase;
-  font-weight: bolder; }
+  font-family: OpenSans;
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 0px; }
 
 .textSpecial {
   color: #003E73;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-family: OpenSans;
+  font-weight: 800;
+  font-size: 32px;
   padding-bottom: 20px; }
 
 #imagesBrand {
@@ -184,6 +202,11 @@ button.hollow.button.button2 {
 #menuListHeader {
   text-align: right;
   margin-top: 20px; }
+
+#menuListHeader a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold; }
 
 ul.menu.headermenu {
   margin-top: 15px; }
