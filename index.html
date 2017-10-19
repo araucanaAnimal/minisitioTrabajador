@@ -31,50 +31,51 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Umbrella</title>
     <link rel="stylesheet" href="css/foundation-flex.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="icons/foundation-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    
 </head>
 <body>
 
     <div data-sticky-container class="headermenu show-for-small-only">
-  
-
       <div class="top-bar headermenu" data-sticky data-options="marginTop: 0" >
-
         <div class="row" style="padding: 0px;" id="rowMobile">
-
           <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium" style="background:transparent;">
-            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-            <div class="columns small-10 large-3 " style="width: 250px;">
+            <div class="columns small-8 large-3 ">
                 <ul class="menu">
-                   <img src="assets/umbrellaLogo.svg" style="max-width: 200px">
+                   <img src="assets/umbrellaLogo.svg">
                 </ul>
             </div>
+            <div>
+                <button id="clickBtnMenu" class="menu-icon" type="button" data-toggle="example-menu"></button>
+            </div>
           </div>
 
-
-          <div class="top-bar show-for-small-only" id="example-menu">
-            <div class="top-bar-left">
+          <div class="top-bar show-for-small-only" id="example-menu" style="height: 100vh;  z-index: 1; /* Sit on top */">
+            <div class="top-bar-left" style="height: 100%;">
               <ul class=" dropdown menu" data-magellan data-dropdown-menu id="menuListHeader">
-                  <li><a href="#first" >¿Qué es Umbrella?</a></li>
-                  <li><a href="#second">Modo de acción</a></li>
-                  
+                  <li><a class= "clickMenu" href="#first" >¿Qué es Umbrella?</a></li>
               </ul>
               <ul class=" dropdown menu" data-magellan data-dropdown-menu id="menuListHeader">
-                  <li><a href="#third" >¿Cómo funciona?</a></li>
-                  <li><a href="#fourth" >Puntos de Venta</a></li>
+                  <li><a class= "clickMenu" href="#second">Modo de acción</a></li>
+              </ul>
+              <ul class=" dropdown menu" data-magellan data-dropdown-menu id="menuListHeader">
+                  <li><a class= "clickMenu" href="#third" >¿Cómo funciona?</a></li>
+              </ul>
+              <ul class=" dropdown menu" data-magellan data-dropdown-menu id="menuListHeader">
+                  <li><a class= "clickMenu" href="#fourth" >Puntos de Venta</a></li>
+              </ul>
+              <ul class=" dropdown menu" data-magellan data-dropdown-menu id="menuListHeader">           
+                  <li><a href="mailto:elizabeth.berrios@animalcreativo.cl">Contacto</a></li>
               </ul>
             </div>
-        
           </div>
         </div>
-      
       </div> 
-  
     </div>
 
 
@@ -92,55 +93,60 @@
                 <li><a href="#second">Modo de acción</a></li>
                 <li><a href="#third" >¿Cómo funciona?</a></li>
                 <li><a href="#fourth" >Puntos de Venta</a></li>
+                <li><a href="mailto:elizabeth.berrios@animalcreativo.cl">Contacto</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-
-
-
-    <div class="orbit hide-for-small-only" role="region" aria-label="Favorite Space Pictures" data-orbit >
-        <div class="orbit-wrapper">
-            <div class="orbit-controls">
-             <!--  <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-              <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button> -->
-            </div>
-            <ul class="orbit-container" id="rata" style="height: 100%;">
-                <li class="is-active orbit-slide" id="rata" >
-                  <picture class="orbit-figure " id="orbit-figure">
-                    <source srcset="assets/slider1.jpg" media"(min-width: 800px)">
-                    <img class="imgOrbit" src="assets/slider1.jpg" alt="" >
-                  </picture>
-                </li>
-         <!--                      <li class="is-active orbit-slide" id="rata" >
-                  <picture class="orbit-figure " id="orbit-figure">
-                    <source srcset="assets/slider2.jpg" media"(min-width: 800px)">
-                    <img class="imgOrbit" src="assets/slider2.jpg" alt="" >
-                  </picture>
-                </li>
-                              <li class="is-active orbit-slide" id="rata" >
-                  <picture class="orbit-figure " id="orbit-figure">
-                    <source srcset="assets/slider3.jpg" media"(min-width: 800px)">
-                    <img class="imgOrbit" src="assets/slider3.jpg" alt="" >
-                  </picture>
-                </li>
-                              <li class="is-active orbit-slide" id="rata" >
-                  <picture class="orbit-figure " id="orbit-figure">
-                    <source srcset="assets/slider4.jpg" media"(min-width: 800px)">
-                    <img class="imgOrbit" src="assets/slider4.jpg" alt="" >
-                  </picture>
-                </li> -->
-            </ul>
-        </div>
-      <!--   <nav class="orbit-bullets">
-            <button class="is-active" data-slide= ><span class="show-for-sr"> orbit1 </span></button>
-            <button data-slide= ><span class="show-for-sr"> orbit2 </span></button>
-            <button data-slide= ><span class="show-for-sr"> orbit3 </span></button>
-            <button data-slide= ><span class="show-for-sr"> orbit4 </span></button>
-        </nav> -->
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit style=" z-index: 0;">
+  <div class="orbit-wrapper">
+    <div class="orbit-controls">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
     </div>
+    <ul class="orbit-container">
+      <li class="is-active orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image show-for-small-only" src="assets/Slider1Mobile@2X.jpg" alt="Space">
+          <img class="orbit-image show-for-medium-only" src="assets/Slider1Tablet.jpg" alt="Space">
+          <img class="orbit-image show-for-large" src="assets/Slider1DesktopHD@2x.jpg" alt="Space">
+          
+         
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image show-for-small-only" src="assets/Slider2Mobile@2X.jpg" alt="Space">
+          <img class="orbit-image show-for-medium-only" src="assets/Slider2Tablet.jpg" alt="Space">
+          <img class="orbit-image show-for-large" src="assets/Slider2DesktopHD.jpg" alt="Space">
+        
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image show-for-small-only" src="assets/Slider3Mobile@2X.jpg" alt="Space">
+          <img class="orbit-image show-for-medium-only" src="assets/Slider3Tablet.jpg" alt="Space">
+          <img class="orbit-image show-for-large" src="assets/Slider3DesktopHD.jpg" alt="Space">
+         
+        </figure>
+      </li>
+    
+    </ul>
+  </div>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+    
+  </nav>
+</div>
+
+<!-- 
+    <div>
+       <img class="imgOrbit" style="width: 100%; height:auto;" data-interchange="[assets/slider1Mobile.jpg, small], [assets/slider1Tablet.jpg, medium], [assets/slider1Desktop.jpg, large], [assets/slider1DesktopHd.jpg, xlarge]">  
+    </div> -->
 
 
     <div class="sections">
@@ -218,9 +224,9 @@
             </div>  
             <div class="columns small-12">
               <div class="responsive-embed">
-                  <div class="columns small-12 text-center" >
+                   <div class="columns small-12 text-center" >
                       <iframe id ="videoFrame" width="960" height="540" src="assets/video2.mp4" frameborder="0" allowfullscreen></iframe>
-                  </div>
+                  </div> 
               </div> 
             </div>
           </div>
@@ -280,6 +286,11 @@
                             <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97">
                                 <a href="#fourth">Puntos de Venta</a>
                             </li>
+                            <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97">
+                                <a href="mailto:elizabeth.berrios@animalcreativo.cl">Contacto</a>
+                            </li>
+
+                            
                         </ul>
                     </nav>
                     <hr size="8px" color="white">
@@ -320,6 +331,9 @@
                     </li>
                     <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97">
                         <a href="#fourth">Puntos de Venta</a>
+                    </li>
+                    <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97">
+                        <a href="mailto:elizabeth.berrios@animalcreativo.cl">Contacto</a>
                     </li>
                 </ul> 
             </div>

@@ -1,6 +1,8 @@
 body {
+  background: white;
   font-family: 'Open Sans', sans-serif;
-  background: white; }
+  font-size: 18px;
+  font-weight: 400; }
 
 header {
   background: white;
@@ -11,7 +13,7 @@ header {
 li#rata {
   text-align: center; }
 
-.menu-icon::after {
+.menu-icon::after, .menu-icon:hover::after {
   background: #0E3E71;
   top: 0;
   left: 0;
@@ -53,7 +55,7 @@ div#example-menu {
 
 .headermenu a, .headermenu p {
   color: #0E3E71;
-  font-weight: bold; }
+  font-weight: 700; }
 
 #card2Div {
   padding-top: 0px; }
@@ -125,7 +127,7 @@ a::after {
 
 .headermenu a, .headermenu p {
   color: #0E3E71;
-  font-weight: bold; }
+  font-weight: 700; }
 
 .card-section {
   background: transparent;
@@ -134,12 +136,12 @@ a::after {
 .card-section p {
   color: #767E8B;
   font-size: 16px;
-  font-weight: regular; }
+  font-weight: 400; }
 
 .card-section h5 {
   color: #0076E8;
   text-transform: uppercase;
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 24px; }
 
@@ -173,13 +175,13 @@ button.hollow.button {
 
 .card2-section p {
   color: #003E73;
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 21px;
-  font-weight: regular; }
+  font-weight: 400; }
 
 .card2-section h3 {
   color: #0076E8;
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 32px;
   padding-top: 10px; }
@@ -187,7 +189,7 @@ button.hollow.button {
 .card2-section h5 {
   color: #003E73;
   text-transform: uppercase;
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 32px;
   margin-bottom: 0px; }
@@ -195,7 +197,7 @@ button.hollow.button {
 .textSpecial {
   color: #003E73;
   text-transform: uppercase;
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 32px;
   padding-bottom: 20px; }
@@ -214,7 +216,7 @@ button.hollow.button.button2 {
 #menuListHeader a {
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: bold; }
+  font-weight: 700; }
 
 ul.menu.headermenu {
   margin-top: 15px; }
@@ -225,7 +227,7 @@ ul.menu.headermenu {
 #error-404Title p {
   color: white;
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase; }
 
 #error-404 p {
@@ -269,7 +271,7 @@ ul.menu.headermenu {
   .headermenu {
     width: 100%;
     min-height: 80px;
-    padding-top: 20px; }
+    padding-top: 0px; }
 
   #rowMobile {
     margin-right: 0px;
