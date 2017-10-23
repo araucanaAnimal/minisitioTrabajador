@@ -278,6 +278,9 @@ ul.menu.headermenu {
     margin-left: 0px; } }
 /* Medium and up */
 @media screen and (min-width: 40em) {
+  .profix {
+    padding-top: 50px; }
+
   #imgHeader img {
     width: 150px;
     padding-top: 10px; } }
@@ -287,7 +290,15 @@ ul.menu.headermenu {
     font-size: 12px; }
 
   #imgOrbit {
-    content: src(); } }
+    content: src(); }
+
+  #imgHeader img {
+    width: 150px;
+    padding-top: 10px; }
+
+  iframe#videoFrame {
+    width: 480px;
+    height: 270px; } }
 /* Large and up */
 /* Large only */
 
