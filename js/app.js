@@ -61,7 +61,7 @@ $(document).ready(function (){
 
 $(function() {
    $(window).on('resize', function(e) {
-        /*var x = $(this).width(),    
+       /* var x = $(this).width(),    
             y = $(this).height(),   
             z = x/y,    
             
@@ -69,12 +69,11 @@ $(function() {
             
             pX = $('<p />', { text: 'x: '+x }).appendTo(output),
             pY = $('<p />', { text: 'y: '+y }).appendTo(output);
-        */
-            if (imgObit != null){
+       
+*/
 
-			    imgObit.css('height', 'auto') ; 
-                imgObit.css('max-height', 'auto') ; 
-			}
+           location.reload();
+
 
     });
 })

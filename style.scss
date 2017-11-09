@@ -3,11 +3,11 @@ $body-background404: #15210a;
 $h3-404: white;
 $p-404: white;
 $header-background: white;
-$footer-background: #0E3E71;
+$footer-background: #004A98;
 $footer-color: white;
 $card-background: transparent;
 $card-textcolor: #767E8B;
-$card-titulocolor: #0076E8;
+$card-titulocolor: #004A98;
 $card-bordercolor: transparent;
 $card-paddingheader: 10px;
 $card-paddingright: 20px;
@@ -20,7 +20,7 @@ $card2-textcolor: #003E73;
 $card2-titulocolor: #003E73;
 $btn2-textcolor: white;
 $btn2-bordercolor: #2691FB;
-$header-textcolor: #0E3E71;
+$header-textcolor: #004A98;
 
 $toplogopadding-left: 20px;
 $toplogopadding-top: 20px;
@@ -28,9 +28,24 @@ $toplogopadding-top: 20px;
 $topmenupadding-top: 40px;
 $topmenupadding-right: 40px;
 
-$orbit-bulletcolor: white;
-$orbit-bulletcoloractive: #3893FF;
+$orbit-bulletcolor: #7D7B7C;
+$orbit-bulletcoloractive: white;
 
+
+@font-face {
+  font-family: AvenirLTStd-Medium;
+  src: url("assets/Fonts/AvenirLTStd-Medium.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-Black;
+  src: url("assets/Fonts/AvenirLTStd-Black.otf");
+}
+
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url("assets/Fonts/MyriadPro-Regular.otf");
+}
 
 body {
   background: $body-background;
@@ -46,8 +61,93 @@ header{
   padding-top: 20px;
 }
 
-li#rata {
-    text-align: center;
+h5{
+  font-family: AvenirLTStd-Medium;
+  font-size: 64px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+}
+
+
+
+h5 span{
+  font-family: AvenirLTStd-Black;
+  font-size: 64px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+}
+
+
+#univerH5 {
+  font-family: AvenirLTStd-Medium;
+  font-size: 32px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+}
+
+#ipH5 span{
+  font-family: AvenirLTStd-Black;
+  font-size: 45px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
+#ipH5 {
+  font-family: AvenirLTStd-Medium;
+  font-size: 24px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
+
+#magisterH5 span{
+  font-family: AvenirLTStd-Black;
+  font-size: 53px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
+#magisterH5 {
+  font-family: AvenirLTStd-Medium;
+  font-size: 24px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
+
+h3{
+  font-family: AvenirLTStd-Medium;
+  font-size: 27px; 
+  color: $header-textcolor;
+  
+}
+
+h3 span{
+  font-family: AvenirLTStd-Black;
+  font-size: 27px; 
+  color: $header-textcolor;
+  
+}
+
+h6{
+  font-family: AvenirLTStd-Medium;
+  font-size: 24px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: AvenirLTStd-Black;
+  font-size: 54px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+}
+
+.orbit-bullets button{
+  background-color: $orbit-bulletcolor;
+}
+.orbit-bullets button.is-active{
+  background-color: $orbit-bulletcoloractive;
 }
 
 .menu-icon::after , .menu-icon:hover::after{
@@ -65,6 +165,9 @@ li#rata {
     text-align: center;
     padding-top: 20px;
 
+}
+nav.orbit-bullets {
+    margin-top: -40px;
 }
 
 div#example-menu {
@@ -106,14 +209,7 @@ div#example-menu {
 #card2Div{
   padding-top: 0px;
 }
-#article1{
-  max-width: 100%;
-  background: rgb(156,195,226); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(156,195,226,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(156,195,226,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(156,195,226,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cc3e2', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */  
-}
+
 
 div#example-menu {
     height: 120px;
@@ -141,16 +237,21 @@ div#example-menu {
 }
 
 .footermenu a , .footermenu p , .footerSocial p {
+  font-family: MyriadPro-Regular;
   color: $footer-color;
 }
 
 .footermenu a , .footerSocial p {
-  font-size: 12px;
+ font-family: MyriadPro-Regular;
+ font-size: 18px;
+ margin-bottom: 0px;
 }
 
 .footermenu p {
- font-size: 10px;
+  font-family: MyriadPro-Regular;
+ font-size: 20px;
  margin-bottom: 0px;
+ line-height: 1.2;
 }
 
 hr {
@@ -187,20 +288,28 @@ a::after {
 .card-section {
   background: $card-background;
   padding: $card-paddingheader $card-paddingright $card-paddingbottom $card-paddingleft;
+
 }
 
 .card-section p {
-  color: $card-textcolor;
-  font-size: 16px;
-  font-weight: 400;
+  font-family: AvenirLTStd-Medium;;
+  font-size: 14px; 
+  color: $header-textcolor;
+  margin-bottom: 0px;
+  line-height: 1.2;
+}
+
+#rowInstitute, #colInstitute{
+  padding: 0px;
 }
 
 .card-section h5{
-  color: $card-titulocolor;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800; 
-  font-size: 24px  ;
+  font-family: AvenirLTStd-Black;
+  font-size: 16px; 
+  color: $header-textcolor;
+  text-transform: none;
+  margin-bottom: 2px;
+  line-height: 1.2;
 }
 #imageCard1 {
   padding-left: 20px;
@@ -215,102 +324,33 @@ a::after {
   padding: 10px;
   border-color: $card-bordercolor;
 }
-button.hollow.button {
-  color:$btn-textcolor;
-  border-color: $btn-bordercolor; 
-}
 
-#rata {
-  max-height:  auto;
-  height: auto;
-}
 
 .small-12.medium-6.columns.card2 {
     padding: 0px;
 }
-.card2-section{
-  background: $card2-background;
-}
+
+
 .header-container {
   background: $header-background;
 }
-.card2-section p {
-  color: $card2-textcolor;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 21px;
-  font-weight: 400;
-}
- .card2-section h3 {
-  color: $card-titulocolor;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;   
-  font-size: 32px;
-  padding-top: 10px;
-}
 
-.card2-section h5 {
-  color: $card2-titulocolor;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800; 
-  font-size: 32px;
-  margin-bottom: 0px;
-}
 
-.textSpecial {
-  color: $card2-titulocolor;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800; 
-  font-size: 32px;
-  padding-bottom: 20px;
-}
-
-#imagesBrand{
-padding: 20px;
-}
-
-button.hollow.button.button2 {
-  color:$btn2-textcolor;
-  border-color: $btn2-bordercolor; 
-}
-
- #menuListHeader  {
+#menuListHeader  {
   text-align: right;
    margin-top: 20px;
-  }
+}
+
 #menuListHeader  a {
+  font-family: AvenirLTStd-Black;
+  color: $header-textcolor;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
 }
+
 ul.menu.headermenu {
     margin-top: 15px;
-}
-
-#error-404Picture img {
-  padding-top: 50px;
-}
-
-#error-404Title p  {
-  color: $h3-404;
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-#error-404 p {
-  color: $p-404;
-  font-size: 24px;
-  font-weight: lighter;
-}
-
-.img-circle {
-    border-radius: 50%;
-}
-
-#body404 {
-  background: $body-background404;
 }
 
 
@@ -347,10 +387,7 @@ ul.menu.headermenu {
   #menuFooterMobile {
     padding: 0px;
   }
-  #videoFrame {
-    width: 320px;
-    height: 180px;
-  }
+ 
   .headermenu {
   width: 100%;
   min-height: 80px;
@@ -360,6 +397,93 @@ ul.menu.headermenu {
   #rowMobile{
   margin-right: 0px;
   margin-left: 0px;
+  }
+  .footermenu a {
+    font-family: MyriadPro-Regular;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .footermenu p {
+    font-family: MyriadPro-Regular;
+    font-size: 14px;
+    margin-bottom: 0px;
+    line-height: 1.2;
+  }
+
+
+
+  h5{
+    font-family: AvenirLTStd-Medium;
+    font-size: 28px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+  }
+
+
+
+  h5 span{
+    font-family: AvenirLTStd-Black;
+    font-size: 28px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+  }
+
+  h3{
+    font-family: AvenirLTStd-Medium;
+    font-size: 16px; 
+    color: $header-textcolor;
+    
+  }
+
+  h3 span{
+    font-family: AvenirLTStd-Black;
+    font-size: 16px; 
+    color: $header-textcolor;
+    
+  }
+
+  h6{
+    font-family: AvenirLTStd-Medium;
+    font-size: 18px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: AvenirLTStd-Black;
+    font-size: 24px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+  }
+  #imagesBrand img{
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+
+  .card-section p {
+    font-family: AvenirLTStd-Medium;;
+    font-size: 12px; 
+    color: $header-textcolor;
+    margin-bottom: 0px;
+    line-height: 1.2;
+  }
+
+
+
+  .card-section h5{
+    font-family: AvenirLTStd-Black;
+    font-size: 14px; 
+    color: $header-textcolor;
+    text-transform: none;
+    margin-bottom: 2px;
+    line-height: 1.2;
+  }
+
+  #footerlogos{
+    margin-bottom: 10px;
   }
 
 }
@@ -392,10 +516,7 @@ ul.menu.headermenu {
     width: 150px;
     padding-top: 10px;
   }
-  iframe#videoFrame {
-    width: 480px;
-    height: 270px;
-  }
+ 
 }
 
 /* Large and up */
