@@ -1,12 +1,19 @@
 @font-face {
   font-family: AvenirLTStd-Medium;
-  src: url("assets/Fonts/AvenirLTStd-Medium.otf"); }
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/Fonts/AvenirLTStd-Medium.otf"), url("assets/Fonts/AvenirLTStd-Medium.woff") format("woff");
+  /* Modern Browsers */ }
 @font-face {
   font-family: AvenirLTStd-Black;
-  src: url("assets/Fonts/AvenirLTStd-Black.otf"); }
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/Fonts/AvenirLTStd-Black.otf"), url("assets/Fonts/AvenirLTStd-Black.woff") format("woff"); }
 @font-face {
   font-family: MyriadPro-Regular;
-  src: url("assets/Fonts/MyriadPro-Regular.otf"); }
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/Fonts/MyriadPro-Regular.otf"), url("assets/Fonts/MyriadPro-Regular.woff") format("woff"); }
 body {
   background: white;
   font-family: 'Open Sans', sans-serif;
@@ -214,6 +221,9 @@ a::after {
 #rowInstitute, #colInstitute {
   padding: 0px; }
 
+#colInstitute p, #colInstitute h5 {
+  text-transform: uppercase; }
+
 .card-section h5 {
   font-family: AvenirLTStd-Black;
   font-size: 16px;
@@ -351,7 +361,37 @@ ul.menu.headermenu {
     line-height: 1.2; }
 
   #footerlogos {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+
+  #univerH5 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 32px;
+    color: #004A98;
+    text-transform: uppercase; }
+
+  #ipH5 span {
+    font-family: AvenirLTStd-Black;
+    font-size: 18px;
+    color: #004A98;
+    text-transform: uppercase; }
+
+  #ipH5 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 14px;
+    color: #004A98;
+    text-transform: uppercase; }
+
+  #magisterH5 span {
+    font-family: AvenirLTStd-Black;
+    font-size: 18px;
+    color: #004A98;
+    text-transform: uppercase; }
+
+  #magisterH5 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 14px;
+    color: #004A98;
+    text-transform: uppercase; } }
 /* Medium and up */
 @media screen and (min-width: 40em) {
   .profix {
@@ -370,7 +410,31 @@ ul.menu.headermenu {
 
   #imgHeader img {
     width: 150px;
-    padding-top: 10px; } }
+    padding-top: 10px; }
+
+  #ipH5 span {
+    font-family: AvenirLTStd-Black;
+    font-size: 32px;
+    color: #004A98;
+    text-transform: uppercase; }
+
+  #ipH5 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 24px;
+    color: #004A98;
+    text-transform: uppercase; }
+
+  #magisterH5 span {
+    font-family: AvenirLTStd-Black;
+    font-size: 32px;
+    color: #004A98;
+    text-transform: uppercase; }
+
+  #magisterH5 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 24px;
+    color: #004A98;
+    text-transform: uppercase; } }
 /* Large and up */
 /* Large only */
 

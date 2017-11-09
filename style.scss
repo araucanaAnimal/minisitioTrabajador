@@ -34,17 +34,26 @@ $orbit-bulletcoloractive: white;
 
 @font-face {
   font-family: AvenirLTStd-Medium;
-  src: url("assets/Fonts/AvenirLTStd-Medium.otf");
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/Fonts/AvenirLTStd-Medium.otf"),
+       url('assets/Fonts/AvenirLTStd-Medium.woff') format('woff'); /* Modern Browsers */
 }
 
 @font-face {
   font-family: AvenirLTStd-Black;
-  src: url("assets/Fonts/AvenirLTStd-Black.otf");
+  font-style: normal;
+font-weight: normal;
+  src: url("assets/Fonts/AvenirLTStd-Black.otf"),
+       url('assets/Fonts/AvenirLTStd-Black.woff') format('woff');
 }
 
 @font-face {
   font-family: MyriadPro-Regular;
-  src: url("assets/Fonts/MyriadPro-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/Fonts/MyriadPro-Regular.otf"),
+       url('assets/Fonts/MyriadPro-Regular.woff') format('woff');
 }
 
 body {
@@ -303,6 +312,12 @@ a::after {
   padding: 0px;
 }
 
+#colInstitute p , #colInstitute h5{
+
+  text-transform: uppercase;
+ 
+}
+
 .card-section h5{
   font-family: AvenirLTStd-Black;
   font-size: 16px; 
@@ -486,6 +501,43 @@ ul.menu.headermenu {
     margin-bottom: 10px;
   }
 
+  #univerH5 {
+  font-family: AvenirLTStd-Medium;
+  font-size: 32px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+}
+
+#ipH5 span{
+  font-family: AvenirLTStd-Black;
+  font-size: 18px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
+#ipH5 {
+  font-family: AvenirLTStd-Medium;
+  font-size: 14px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
+
+#magisterH5 span{
+  font-family: AvenirLTStd-Black;
+  font-size: 18px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
+#magisterH5 {
+  font-family: AvenirLTStd-Medium;
+  font-size: 14px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
+
 }
 
 
@@ -516,6 +568,36 @@ ul.menu.headermenu {
     width: 150px;
     padding-top: 10px;
   }
+
+  #ipH5 span{
+  font-family: AvenirLTStd-Black;
+  font-size: 32px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
+  #ipH5 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 24px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+    
+  }
+
+  #magisterH5 span{
+  font-family: AvenirLTStd-Black;
+  font-size: 32px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
+#magisterH5 {
+  font-family: AvenirLTStd-Medium;
+  font-size: 24px; 
+  color: $header-textcolor;
+  text-transform: uppercase;
+  
+}
  
 }
 
