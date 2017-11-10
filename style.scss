@@ -36,6 +36,7 @@ $orbit-bulletcoloractive: white;
   font-family: AvenirLTStd-Medium;
   font-style: normal;
   font-weight: normal;
+  src: url('assets/Fonts/avenirltstd-book-webfont.eot'); /* IE9 Compat Modes */
   src: url("assets/Fonts/AvenirLTStd-Medium.otf"),
        url('assets/Fonts/AvenirLTStd-Medium.woff') format('woff'); /* Modern Browsers */
 }
@@ -43,7 +44,8 @@ $orbit-bulletcoloractive: white;
 @font-face {
   font-family: AvenirLTStd-Black;
   font-style: normal;
-font-weight: normal;
+  font-weight: normal;
+  src: url('assets/Fonts/avenirltstd-black-webfont.eot'); /* IE9 Compat Modes */
   src: url("assets/Fonts/AvenirLTStd-Black.otf"),
        url('assets/Fonts/AvenirLTStd-Black.woff') format('woff');
 }
@@ -52,6 +54,7 @@ font-weight: normal;
   font-family: MyriadPro-Regular;
   font-style: normal;
   font-weight: normal;
+  src: url('assets/Fonts/MyriadPro-Regular.eot'); /* IE9 Compat Modes */
   src: url("assets/Fonts/MyriadPro-Regular.otf"),
        url('assets/Fonts/MyriadPro-Regular.woff') format('woff');
 }
@@ -261,6 +264,12 @@ div#example-menu {
  font-size: 20px;
  margin-bottom: 0px;
  line-height: 1.2;
+}
+
+
+#footerTitle{
+  margin-top: 5px;
+
 }
 
 hr {
@@ -502,11 +511,11 @@ ul.menu.headermenu {
   }
 
   #univerH5 {
-  font-family: AvenirLTStd-Medium;
-  font-size: 32px; 
-  color: $header-textcolor;
-  text-transform: uppercase;
-}
+    font-family: AvenirLTStd-Medium;
+    font-size: 32px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+  }
 
 #ipH5 span{
   font-family: AvenirLTStd-Black;
@@ -570,12 +579,12 @@ ul.menu.headermenu {
   }
 
   #ipH5 span{
-  font-family: AvenirLTStd-Black;
-  font-size: 32px; 
-  color: $header-textcolor;
-  text-transform: uppercase;
-  
-}
+    font-family: AvenirLTStd-Black;
+    font-size: 28px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+    
+  }
   #ipH5 {
     font-family: AvenirLTStd-Medium;
     font-size: 24px; 
@@ -585,19 +594,28 @@ ul.menu.headermenu {
   }
 
   #magisterH5 span{
-  font-family: AvenirLTStd-Black;
-  font-size: 32px; 
-  color: $header-textcolor;
-  text-transform: uppercase;
-  
-}
-#magisterH5 {
-  font-family: AvenirLTStd-Medium;
-  font-size: 24px; 
-  color: $header-textcolor;
-  text-transform: uppercase;
-  
-}
+    font-family: AvenirLTStd-Black;
+    font-size: 32px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+    
+  }
+  #magisterH5 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 24px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+    
+  }
+
+  #univerH5 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 56px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+  }
+
+ 
  
 }
 
