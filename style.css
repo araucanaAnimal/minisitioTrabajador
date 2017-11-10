@@ -44,6 +44,9 @@ h5 span {
   color: #004A98;
   text-transform: uppercase; }
 
+.modalAraucana {
+  width: 60%; }
+
 #univerH5 {
   font-family: AvenirLTStd-Medium;
   font-size: 32px;
@@ -400,7 +403,15 @@ ul.menu.headermenu {
     font-family: AvenirLTStd-Medium;
     font-size: 14px;
     color: #004A98;
-    text-transform: uppercase; } }
+    text-transform: uppercase; }
+
+  .modalAraucana {
+    width: 100%;
+    max-height: 100%; }
+
+  .modalAraucana iframe {
+    width: 90%;
+    height: 90%; } }
 /* Medium and up */
 @media screen and (min-width: 40em) {
   .profix {

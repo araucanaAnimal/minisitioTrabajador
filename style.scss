@@ -89,6 +89,10 @@ h5 span{
   text-transform: uppercase;
 }
 
+.modalAraucana {
+    width: 60%;
+}
+
 
 #univerH5 {
   font-family: AvenirLTStd-Medium;
@@ -453,6 +457,8 @@ ul.menu.headermenu {
     text-transform: uppercase;
   }
 
+
+
   h3{
     font-family: AvenirLTStd-Medium;
     font-size: 16px; 
@@ -517,36 +523,45 @@ ul.menu.headermenu {
     text-transform: uppercase;
   }
 
-#ipH5 span{
-  font-family: AvenirLTStd-Black;
-  font-size: 18px; 
-  color: $header-textcolor;
-  text-transform: uppercase;
-  
-}
-#ipH5 {
-  font-family: AvenirLTStd-Medium;
-  font-size: 14px; 
-  color: $header-textcolor;
-  text-transform: uppercase;
-  
-}
+  #ipH5 span{
+    font-family: AvenirLTStd-Black;
+    font-size: 18px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+    
+  }
+  #ipH5 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 14px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+    
+  }
 
-#magisterH5 span{
-  font-family: AvenirLTStd-Black;
-  font-size: 18px; 
-  color: $header-textcolor;
-  text-transform: uppercase;
-  
-}
-#magisterH5 {
-  font-family: AvenirLTStd-Medium;
-  font-size: 14px; 
-  color: $header-textcolor;
-  text-transform: uppercase;
-  
-}
+  #magisterH5 span{
+    font-family: AvenirLTStd-Black;
+    font-size: 18px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+    
+  }
+  #magisterH5 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 14px; 
+    color: $header-textcolor;
+    text-transform: uppercase;
+    
+  }
+  .modalAraucana {
+      width: 100%;
+      max-height: 100%;
+  }
 
+  .modalAraucana iframe {
+      width: 90%;
+      height: 90%;
+
+  }
 }
 
 
@@ -560,8 +575,6 @@ ul.menu.headermenu {
     width: 150px;
     padding-top: 10px;
   }
- 
-
 }
 
 /* Medium only */
