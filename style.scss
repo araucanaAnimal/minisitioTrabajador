@@ -32,6 +32,7 @@ $orbit-bulletcolor: #7D7B7C;
 $orbit-bulletcoloractive: #004A98;
 
 
+
 @font-face {
   font-family: AvenirLTStd-Medium;
   font-style: normal;
@@ -379,7 +380,10 @@ ul.menu.headermenu {
     margin-top: 15px;
 }
 
-
+.card2 img {
+  width: 90px;
+  height: 90px;
+}
 
 //Medias Queris
 

@@ -7,10 +7,10 @@
             </div> 
         </div>
         
-        <div class="row small-up-1 medium-up-3 ">
+        <div class="row small-up-1 medium-up-2 large-up-3">
 
            <div class="small-12 medium-4 columns" id="colInstitute">
-            <a class="openpop" >
+            <a target="_blank" href="http://tdigital.laaraucana.cl/beneficio/tronwell">
                 <div class="card columns" id="idioma2">
                   <div class="row container" id="rowInstitute"> 
                       <div class="small-4 columns card2 ">
