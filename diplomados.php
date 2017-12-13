@@ -67,7 +67,7 @@
                           <img src="assets/diplomaUCatolica.png" class="attachment-full size-full wp-post-image" alt=""  />    
                   </div>
                   <div class="small-8 columns  card-section align-self-middle text-left" id="colInstitute">
-                        <h5>Pontificia Universidad Católica:</h5>
+                        <h5>Pontificia Universidad Católica de Chile:</h5>
                         <p>hasta 10% DCTO.</p>
                         <img src="assets/plus.svg" width="50" height="auto">
                   </div>

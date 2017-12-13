@@ -68,7 +68,7 @@
                         <div class="small-8 columns  card-section align-self-middle text-left" id="colInstitute">
                               <h5>centro de formación técnica MAnpower:</h5>
                               <p>hasta 15% DCTO.</p>
-                              <img src="assets/plus.svg" width="50" height="auto">
+                              <img src=assets/plus.svg" width="50" height="auto">
                         </div>
                      </div>    
                   </div>
